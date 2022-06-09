@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.17/css/intlTelInput.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>Форма обратной связи</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row form-container">
+      <div class="col-xl-6 mb-lg-4 mb-xl-0">
+        <img class="img-fluid mx-auto d-block mercury-img" src="img/img.jpg" alt="mercury-img">
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima repellat ipsam similique
+          mollitia numquam,
+          eveniet nulla quasi ipsum dolor est autem, id doloremque nesciunt quae eum inventore ea nisi sit?</p>
+      </div>
+      <div class="col-xl-6">
+        <form action="/mail.php" method="get" class="contact__form shake">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="alert alert-success contact__msg" style="display: none;">
+                Заявка успешно отправлена.
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 form-group">
+              <label for="" class="h4 first_name">
+                Имя
+                <input type="text" name="name" placeholder="Введите имя" class="form-input form-control">
+              </label>
+            </div>
+            <div class="col-lg-6 form-group">
+              <label for="" class="h4 last_name">
+                Фамилия
+                <input type="text" name="name" placeholder="Введите фамилию" class="form-input form-control">
+              </label>
+            </div>
+            <div class="col-lg-6 form-group">
+              <label for="email" class="h4">
+                Email
+                <input type="email" class="form-control form-input" id="email" placeholder="Enter email">
+              </label>
+            </div>
+            <div class="col-lg-6 form-group">
+              <label for="" class="phone">
+                <h4>Ваш телефон</h4>
+                <div class="form-group">
+                  <input class="form-input form-control tel" id="phone-number" required="tel" type="tel" name="phone"
+                    inputmode="tel" value="" />
+                </div>
+            </div>
+          </div>
+          <button type="submit" name="submit" class="btn btn-success btn-lg">Прошу связаться со мной</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/4.0.8/jquery.inputmask.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.0/js/intlTelInput.min.js"></script>
+  <script src="js/ex.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
